@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const HomePage = () => (
   <div className="container">
@@ -10,7 +11,10 @@ const HomePage = () => (
 
     <main>
       <h1 className="title">
-        Learn <a href="https://nextjs.org">Next.js!</a>
+        Read{' '}
+        <Link href="/posts/first-post">
+          <a>this page!</a>
+        </Link>
       </h1>
 
       <p className="description">
