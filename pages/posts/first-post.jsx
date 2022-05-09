@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
 
+import Layout from '../../components/Layout';
 import profilePic from '../../public/images/profile.jpeg';
 
 const FirstPost = () => {
@@ -11,7 +12,7 @@ const FirstPost = () => {
   };
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -32,7 +33,7 @@ const FirstPost = () => {
           <a>Back to home</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   );
 };
 
