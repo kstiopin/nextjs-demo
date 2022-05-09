@@ -7,7 +7,7 @@ import ExampleGrid from './ExampleGrid';
 import Layout, { siteTitle } from './Layout';
 import homeStyles from './home.module.css';
 
-const HomePage = () => (
+const HomePage = ({ allPostsData }) => (
   <Layout home>
     <Head>
       <title>{siteTitle}</title>
@@ -21,6 +21,21 @@ const HomePage = () => (
         (This is a sample website - you'll be building a site like this on{' '}
         <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
       </p>
+    </section>
+
+    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <h2 className={utilStyles.headingLg}>Blog</h2>
+      <ul className={utilStyles.list}>
+        {allPostsData.map(({ id, date, title }) => (
+          <li className={utilStyles.listItem} key={id}>
+            {title}
+            <br />
+            {id}
+            <br />
+            {date}
+          </li>
+        ))}
+      </ul>
     </section>
 
     <main className={homeStyles.main}>
