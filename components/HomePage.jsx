@@ -1,11 +1,11 @@
-import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import ExampleGrid from '../components/ExampleGrid';
-import Layout, { siteTitle } from '../components/layout';
-import mainStyles from '../styles/main.module.css';
 import utilStyles from '../styles/utils.module.css';
+
+import ExampleGrid from './ExampleGrid';
+import Layout, { siteTitle } from './Layout';
+import homeStyles from './home.module.css';
 
 const HomePage = () => (
   <Layout home>
@@ -13,22 +13,22 @@ const HomePage = () => (
       <title>{siteTitle}</title>
     </Head>
     <section className={utilStyles.headingMd}>
-      <h1 className={mainStyles.title}>
+      <h1 className={homeStyles.title}>
         Getting familiar with NextJS and it's core features.
       </h1>
 
-      <p className={mainStyles.description}>
+      <p className={homeStyles.description}>
         (This is a sample website - you'll be building a site like this on{' '}
         <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
       </p>
     </section>
 
-    <main className={mainStyles.main}>
+    <main className={homeStyles.main}>
       <Link href="/posts/first-post">
         Example page
       </Link>
 
-      <h2 className={mainStyles.title}>
+      <h2 className={homeStyles.title}>
         Below is a list of useful resources.
       </h2>
 
