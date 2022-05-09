@@ -7,3 +7,4 @@ This package follows the tutorials from:
 - [Assets, Metadata, and CSS](https://nextjs.org/learn/basics/assets-metadata-css)
 - [Pre-rendering and Data Fetching](https://nextjs.org/learn/basics/data-fetching)
   - For future references: [Fetching Data from external sources](https://nextjs.org/learn/basics/data-fetching/getstaticprops-details)
+- [Dynamic Routes](https://nextjs.org/learn/basics/dynamic-routes)

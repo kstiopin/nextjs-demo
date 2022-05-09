@@ -28,7 +28,7 @@ const HomePage = ({ allPostsData }) => (
       <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }) => (
           <li className={utilStyles.listItem} key={id}>
-            {title}
+            <Link href={`/posts/${id}`}>{title}</Link>
             <br />
             {id}
             <br />
@@ -39,10 +39,6 @@ const HomePage = ({ allPostsData }) => (
     </section>
 
     <main className={homeStyles.main}>
-      <Link href="/posts/first-post">
-        Example page
-      </Link>
-
       <h2 className={homeStyles.title}>
         Below is a list of useful resources.
       </h2>
