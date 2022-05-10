@@ -8,3 +8,4 @@ This package follows the tutorials from:
 - [Pre-rendering and Data Fetching](https://nextjs.org/learn/basics/data-fetching)
   - For future references: [Fetching Data from external sources](https://nextjs.org/learn/basics/data-fetching/getstaticprops-details)
 - [Dynamic Routes](https://nextjs.org/learn/basics/dynamic-routes)
+  - [Useful details](https://nextjs.org/learn/basics/dynamic-routes/dynamic-routes-details)

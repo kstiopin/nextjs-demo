@@ -6,6 +6,7 @@ import utilStyles from '../styles/utils.module.css';
 import ExampleGrid from './ExampleGrid';
 import Layout, { siteTitle } from './Layout';
 import homeStyles from './home.module.css';
+import { getDateString } from '../utils/getDateString';
 
 const HomePage = ({ allPostsData }) => (
   <Layout home>
@@ -30,9 +31,7 @@ const HomePage = ({ allPostsData }) => (
           <li className={utilStyles.listItem} key={id}>
             <Link href={`/posts/${id}`}>{title}</Link>
             <br />
-            {id}
-            <br />
-            {date}
+            <small className={utilStyles.lightText}>{getDateString(date)}</small>
           </li>
         ))}
       </ul>
