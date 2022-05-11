@@ -10,7 +10,10 @@ import styles from './layout.module.css';
 const name = 'Kirill Stiopin';
 export const siteTitle = 'Next.js Sample Website';
 
-const Layout = ({ children, home }) => (
+const Layout = ({ children, home }: {
+  children: React.ReactNode;
+  home?: boolean;
+}) => (
   <div className={styles.container}>
     <Head>
       <link rel="icon" href="/favicon.ico" />

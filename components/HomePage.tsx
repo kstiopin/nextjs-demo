@@ -8,7 +8,13 @@ import Layout, { siteTitle } from './Layout';
 import homeStyles from './home.module.css';
 import { getDateString } from '../utils/getDateString';
 
-const HomePage = ({ allPostsData }) => (
+const HomePage = ({ allPostsData }: {
+  allPostsData: {
+    date: string;
+    title: string;
+    id: string;
+  }[]
+}) => (
   <Layout home>
     <Head>
       <title>{siteTitle}</title>
@@ -48,8 +54,7 @@ const HomePage = ({ allPostsData }) => (
     </main>
 
     <footer>
-      (This is a sample website - you'll be building a site like this on{' '}
-      <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+      (Developed as part of DevCon 2022.)
     </footer>
   </Layout>
 );

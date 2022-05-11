@@ -5,7 +5,13 @@ import { getDateString } from '../utils/getDateString';
 
 import Layout from './Layout';
 
-const Post = ({ postData }) => (
+const Post = ({ postData }: {
+  postData: {
+    title: string;
+    date: string;
+    contentHtml: string;
+  }
+}) => (
   <>
     <Head>
       <title>{postData.title}</title>
