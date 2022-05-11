@@ -9,3 +9,5 @@ This package follows the tutorials from:
   - For future references: [Fetching Data from external sources](https://nextjs.org/learn/basics/data-fetching/getstaticprops-details)
 - [Dynamic Routes](https://nextjs.org/learn/basics/dynamic-routes)
   - [Useful details](https://nextjs.org/learn/basics/dynamic-routes/dynamic-routes-details)
+- [API Routes](https://nextjs.org/learn/basics/api-routes)
+  - [Dynamic API Routes](https://nextjs.org/docs/api-routes/dynamic-api-routes)

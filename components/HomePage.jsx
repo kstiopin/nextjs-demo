@@ -35,6 +35,8 @@ const HomePage = ({ allPostsData }) => (
           </li>
         ))}
       </ul>
+      <h2 className={utilStyles.headingLg}>Static APIs</h2>
+      <Link href='/api/hello'>Hello API example</Link>
     </section>
 
     <main className={homeStyles.main}>
