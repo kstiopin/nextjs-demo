@@ -1,5 +1,7 @@
 # Overview
 
+The project has been deployed with Vercel to https://nextjs-demo-xi-rouge.vercel.app.
+
 This package follows the tutorials from:
 
 - [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
@@ -11,3 +13,6 @@ This package follows the tutorials from:
   - [Useful details](https://nextjs.org/learn/basics/dynamic-routes/dynamic-routes-details)
 - [API Routes](https://nextjs.org/learn/basics/api-routes)
   - [Dynamic API Routes](https://nextjs.org/docs/api-routes/dynamic-api-routes)
+- Useful Vercel links
+  - [Assign a custom domain to a Next.js app](https://vercel.com/docs/custom-domains)
+  - [Configuring builds](https://vercel.com/docs/concepts/deployments/build-step)
